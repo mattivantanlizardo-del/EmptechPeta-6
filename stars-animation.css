@@ -1,0 +1,40 @@
+#Star, #Star2, #Star3{
+  position: absolute;
+  z-index: 1;
+
+  cursor:url('images/Catpaw\ pointing\ Mouse\ icon.png'), grab;
+  user-select: none;
+  touch-action: none;
+}
+
+  #Star {
+    top: 10%;
+    left: 70%;
+    animation-duration: 2s;
+  }
+  #Star2{
+    top: 7%;
+    left: 76%;
+    animation-duration: 3.5s;
+  }
+  #Star3{
+    top: 5%;
+    left: 68%;
+    animation-duration: 3s;
+  }
+
+.floating{
+  animation-name: float;
+  animation-timing-function: ease-in-out infinite;
+  animation-iteration-count: infinite;
+}
+
+ @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+  }
+
+#Star:active, #Star2:active, #Star3:active {
+  cursor:url('images/Catpaw\ holding\ Mouse\ icon.png'), grabbing;
+  animation: none;
+}

@@ -1,0 +1,95 @@
+body{
+  margin:0; 
+  padding:0; 
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+
+
+  background-image: 
+    repeating-linear-gradient(
+      to right,
+      transparent 0 50px,
+      #fff1 50px 51px
+    );
+
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.header{
+  height: 40px;
+  background-color: rgb(105,75,55);
+  display: flex;
+  position:sticky;
+  top:0;
+  z-index: 100;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow:0px 2px 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%; /* Ensure it doesn't stretch past the screen */
+    height: auto; /* Let it wrap content if needed */
+  }
+}
+
+.Left-Section{
+  display: flex;
+  align-items: top;
+  width: 300px;
+}
+
+.Right-Section{
+  display: flex;
+  align-items: top;
+  justify-content: flex-end;
+  width: 300px;
+}
+
+.About, .Support, .Awareness, .Home, .Thanks{
+  width:40px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.About:hover, .Support:hover, .Awareness:hover, .Home:hover, .Thanks:hover{
+  cursor: url('images/Catpaw\ pointing\ Mouse\ icon.png'), auto;
+  background-color: rgb(75, 46, 43);
+  transition: 0.5s;
+}
+
+.About:active, .Support:active, .Awareness:active, .Home:active, .Thanks:active{
+  cursor: url('images/Catpaw\ holding\ Mouse\ icon.png'), auto;
+  background-color: rgb(75, 46, 43);
+  transition: 0.5s;
+}
+
+.grid{
+  display: flex;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        justify-content: center;
+}
+
+.grid-item1, .grid-item2{
+  width: 350px;
+  height: auto;
+  display: flex;
+  background-color: rgb(24, 35, 15);
+  border-radius: 25px;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.planting1, .planting2{
+  max-width: 90%;
+  height: auto;
+}
+

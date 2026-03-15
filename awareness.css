@@ -1,0 +1,54 @@
+.grid-1{
+  display: flex;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        justify-content: center;
+        gap: 20px;
+}
+
+.grid-item3, .grid-item4{
+  width: 350px;
+  height: auto;
+  display: flex;
+  background-color: rgb(24, 35, 15);
+  border-radius: 25px;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pollution, .deforestation{
+  max-width: 90%;
+  height: auto;
+}
+
+#Star, #Star2, #Star3{
+  position: absolute;
+  z-index: 1;
+
+  cursor:url('images/Catpaw\ pointing\ Mouse\ icon.png'), grab;
+  user-select: none;
+  touch-action: none;
+}
+
+#Star{
+   top: 30%;
+    right: 5%;
+}
+
+#Star2{
+  top: 7%;
+    left: 10%;
+}
+
+#Star3{
+  top: 60%;
+    left: 7%;
+}
+
+#Star:active, #Star2:active, #Star3:active{
+  cursor:url('images/Catpaw\ holding\ Mouse\ icon.png'), grabbing;
+  animation: none;
+}

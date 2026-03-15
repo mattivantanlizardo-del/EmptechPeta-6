@@ -1,0 +1,39 @@
+  .star-container{
+    position: absolute;
+    top: -50px;   
+    left: 100%;   
+    width: 50px;   
+  }
+
+  .star, .star2, .star3, .star4{
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+    position: absolute;
+    width: 50px;
+    filter: drop-shadow(0 0 10px #fff);
+    opacity: 0; /* Start hidden */
+    animation: starfall 4s linear infinite;
+  }
+
+  .star  { bottom: 10%; left: 10%;  animation-delay: 0s; }
+  .star2 { bottom: 80%; left: 20%;  animation-delay: 1.5s; }
+  .star3 { bottom: 5%;  left: 50%;  animation-delay: 3s; }
+  .star4 { bottom: 15%; left: 70%;  animation-delay: 4.5s; }
+
+  @keyframes starfall {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1; 
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+
+      transform: translate(-120vw, 120vh) rotate(-45deg);
+      opacity: 0; 
+    }
+  }

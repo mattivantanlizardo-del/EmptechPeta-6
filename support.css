@@ -1,0 +1,67 @@
+
+.link-btns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap:20px;
+}
+
+.link{
+  display:inline-block;
+  background-color: rgb(39, 57, 28);
+  font-family:Pixelify Sans, sans-serif; 
+  text-align: center; 
+  color: white; 
+  width: fit-content;
+  text-decoration: none; /*ensures the link underline is not seen*/
+  border: none;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.link:hover{
+  background-color: rgb(24, 35, 15);
+  transition: 0.5s;
+  cursor: url('images/Catpaw\ pointing\ Mouse\ icon.png'), auto;
+}
+
+.link:active{
+  background-color: rgb(37, 95, 56);
+}
+
+#Star, #Star2, #Star3, #Star4{
+  position: absolute;
+  z-index: 1;
+
+  cursor:url('images/Catpaw\ pointing\ Mouse\ icon.png'), grab;
+  user-select: none;
+  touch-action: none;
+}
+
+  #Star {
+    top: 10%;
+    right: 5%;
+  }
+  #Star2{
+    top: 7%;
+    left: 10%;
+  }
+  #Star3{
+    top: 30%;
+    left: 73%;
+  }
+
+  #Star4{
+    top: 45%;
+    left: 10%;
+  }
+
+#Star:active, #Star2:active, #Star3:active, #Star4:active {
+  cursor:url('images/Catpaw\ holding\ Mouse\ icon.png'), grabbing;
+  animation: none;
+}
+

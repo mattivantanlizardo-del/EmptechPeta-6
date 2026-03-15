@@ -1,0 +1,32 @@
+#Star4, #Star5, #Star6, #Star7, #Star8{
+  position: absolute;
+  z-index: 1;
+
+  cursor:url('images/Catpaw\ pointing\ Mouse\ icon.png'), grab;
+  user-select: none;
+  touch-action: none;
+}
+
+#Star4{
+   top: 81%;
+    right: 5%;
+}
+
+#Star5{
+  top: 7%;
+    left: 10%;
+}
+
+#Star7{
+  top: 50%;
+    left: 7%;
+}
+
+#Star8{
+top: 30%;
+    left: 2%
+}
+#Star4:active, #Star5:active, #Star6:active, #Star7:active #Star8:active{
+  cursor:url('images/Catpaw\ holding\ Mouse\ icon.png'), grabbing;
+  animation: none;
+}
